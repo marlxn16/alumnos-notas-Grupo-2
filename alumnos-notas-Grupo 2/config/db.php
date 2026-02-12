@@ -4,7 +4,7 @@ declare(strict_types=1);
 $host = "localhost";
 $db   = "crud_notas";
 $user = "root";
-$pass = ""; // XAMPP normalmente vacio
+$pass = ""; 
 $charset = "utf8mb4";
 
 $dsn = "mysql:host={$host};dbname={$db};charset={$charset}";
