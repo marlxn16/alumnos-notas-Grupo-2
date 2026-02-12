@@ -1,10 +1,14 @@
 <?php
-require_once __DIR__ . "/../config/db.php";
+declare(strict_types=1);
 
-$id = (int)($_GET["id"] ?? 0);
+require_once __DIR__ . '/config/db.php';
 
-$del = $pdo->prepare("DELETE FROM nota WHERE id=?");
-$del->execute([$id]);
+$id = (int)($_GET['id'] ?? 0);
 
-header("Location: notas.php");
+if ($id > 0) {
+  $del = $pdo->prepare("DELETE FROM nota WHERE id = ?");
+  $del->execute([$id]);
+}
+
+header("Location: index.php");
 exit;
