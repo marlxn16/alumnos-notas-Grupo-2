@@ -55,9 +55,4 @@
 - reportes/
 - assets/
 - dompdf/
-
-## Ejecucion local
-- Iniciar Apache y MySQL (XAMPP)
-- Importar la base de datos en MySQL
-- Abrir:
-  http://localhost/NOMBRE_CARPETA_PROYECTO/index.php
+  <img width="1664" height="677" alt="Captura de pantalla 2026-02-12 214613" src="https://github.com/user-attachments/assets/01be0e01-a2f6-4b6a-a0b7-dde445f1d3b3" />
