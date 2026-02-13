@@ -2,14 +2,14 @@
 
 ## Objetivo
 - Desarrollar un CRUD web para administrar alumnos y sus notas
-- Calcular promedio y resultado cualitativo por alumno
+- Calcular promedio y resultado por alumno
 - Generar reportes en PDF y exportacion para Excel (CSV)
 
 ## Recursos usados
 - PHP con PDO para acceso a datos
-- MySQL (phpMyAdmin para gestion)
+- MySQL phpMyAdmin para gestion
 - Bootstrap para formularios y vistas
-- Dompdf incluido en la carpeta dompdf/ (sin Composer)
+- Dompdf incluido en la carpeta dompdf
 
 ## Modelo de datos
 - alumno: nombre, apellido, correo
@@ -39,21 +39,25 @@
 ## Reportes
 - PDF
   - Generacion de reporte en PDF con Dompdf (HTML a PDF)
-  - Archivo: reportes/reporte_pdf.php
-
 - Excel (CSV)
   - Exportacion en CSV compatible con Excel (sin dependencias)
-  - Archivo: reportes/reporte_excel.php
 
 ## Estructura del proyecto
 - index.php
-- config/db.php
-- helpers/functions.php
-- partials/header.php y partials/footer.php
+- config/
+  - db.php
+- helpers/
+  - functions.php
+- partials/
+  - header.php y partials/footer.php
 - alumno_*.php
 - nota_*.php
 - reportes/
+  -pdf
+  -exel 
 - assets/
+  -styles 
 - dompdf/
+  -archivos necesarios para que funcione 
   
   <img width="1664" height="677" alt="Captura de pantalla 2026-02-12 214613" src="https://github.com/user-attachments/assets/01be0e01-a2f6-4b6a-a0b7-dde445f1d3b3" />
